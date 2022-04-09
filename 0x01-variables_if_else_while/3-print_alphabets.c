@@ -19,7 +19,7 @@ letter = 0;
 while (letter < 26)
 {
 putchar('A' + letter);
-putchar++;
+letter++;
 }
 putchar('\n');
 return(0);
