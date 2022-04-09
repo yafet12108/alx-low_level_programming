@@ -11,7 +11,9 @@ int main(void)
 	int left = 48;                                                                                                                          
 	                                                                                                                                        
 	while (left < 58)                                                                                                                       
-	{                                                                                                                                       
+	{             
+while (right < 58)
+{	
 		putchar(left);                                                                                                                          
 		putchar(right++);                                                                                                                       
 		if (right == 58)                                                                                                                        
@@ -22,7 +24,8 @@ int main(void)
 		{                                                                                                                                       
 			putchar(44);                                                                                                                            
 			putchar(32);                                                                                                                            
-		}                                                                                                                                       
+		}  
+}		
 		right = 48;                                                                                                                             
 	}                                                                                                                                       
 	putchar('\n');                                                                                                                          
