@@ -14,6 +14,6 @@ while (letter < 26)
 putchar('a' + letter);
 letter++;	
 }
-putchar("\n");
+putchar('\n');
 return (0);
 }
