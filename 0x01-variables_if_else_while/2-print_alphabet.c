@@ -7,9 +7,9 @@
  */
 int main(void)
 {
-int letter 0;
+int letter = 0;
 
-while (letter < 6)
+while (letter < 26)
 {
 putchar('a' + letter);
 letter++;	
