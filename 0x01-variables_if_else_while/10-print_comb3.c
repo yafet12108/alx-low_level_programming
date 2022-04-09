@@ -12,6 +12,8 @@ int left = 48;
 
 while (left < 58)
 {
+while (right < 58)
+{
 putchar(left);
 putchar(right++);
 if (right == 58)
@@ -22,6 +24,7 @@ if (left < 58)
 {
 putchar(44);
 putchar(32);
+}
 }
 right = 48;
 }
