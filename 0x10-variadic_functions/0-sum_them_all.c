@@ -1,19 +1,34 @@
-#include <stdarg.h>
+#include "variadic_functions.h"
+
 /**
- * sum_them_all - sum variable list of ints
- * @n: number of argumeents
- * Return: sum
- */
+  * sum_them_all - ...
+  * @n: ...
+  *
+  * Return: ...
+  */
 int sum_them_all(const unsigned int n, ...)
-{	unsigned int i;
-	va_list ap;
+{
+	va_list args;
+	unsigned int i = 0;
 	int sum = 0;
 
-	if (n == 0)
-		return (0);
-	va_start(ap, n);
-	for (i = 0; i < n; i++)
-		sum += va_arg(ap, int);
-	va_end(ap);
-	return (sum);
+	if (n != 0)
+	{
+		va_start(args, n);
+
+		while (i < n)
+		{
+			sum += va_arg(args, int);
+			i++;
+		}
+
+		va_end(args);
+		return (sum);
+	}
+
+	return (0);
 }
+
+    © 2022 GitHub, Inc.
+
+    Terms
